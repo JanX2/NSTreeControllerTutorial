@@ -398,10 +398,10 @@
 	<li class="li3"><span class="s1">Under “contentArray”, choose “File’s Owner (CODocument)” from the dropdown menu.</span></li>
 	<li class="li3"><span class="s1">Next to “Model Key Path”, type “contents” and hit return. This should automatically check the “bind” checkbox. [PICTURE]</span></li>
 </ol>
-<p class="p3"><span class="s1">That’s all we need to to to get our NSTreeController up and running. Next we need to tell our outline view and table view to use this information:</span></p>
+<p class="p3"><span class="s1">That’s all we need to do to get our NSTreeController up and running. Next we need to tell our outline view and table view to use this information:</span></p>
 <ol class="ol1">
 	<li class="li3"><span class="s1">Double-click on the outline view until you can select its column (there should be only one column). Make sure “Bindings” is still selected in the inspector.</span></li>
-	<li class="li3"><span class="s1">Click on the disclosure triangle next to “contents”. “Bind to” should already be set to “OutlineController (NSTreeController)” and “Controller Key” should already be set to “arrangedObjects” (if not, make sure they are).</span></li>
+	<li class="li3"><span class="s1">Click on the disclosure triangle next to “value”. “Bind to” should already be set to “OutlineController (NSTreeController)” and “Controller Key” should already be set to “arrangedObjects” (if not, make sure they are).</span></li>
 	<li class="li3"><span class="s1">Next to “Model Key Path”, type “title” and hit enter so that “Bind” gets checked. [PICTURE]</span></li>
 </ol>
 <p class="p3"><span class="s1">We have just told the outline view column to display the objects in the tree controller using their titles.</span></p>
@@ -412,7 +412,7 @@
 	<li class="li3"><span class="s1">With TableController still selected, select “Attributes” in the inspector.</span></li>
 	<li class="li3"><span class="s1">Set the “Object Class Name” to “CONode”, and uncheck “Avoids Empty Selection”.</span></li>
 	<li class="li3"><span class="s1">Select “Bindings” in the inspector.</span></li>
-	<li class="li3"><span class="s1">Under “value”, “Bind to” should already be set to “OutlineController (NSTreeController)” and “Controller Key” should already be set to “selection” (if not, do that now).</span></li>
+	<li class="li3"><span class="s1">Under “contentArray”, “Bind to” should already be set to “OutlineController (NSTreeController)” and “Controller Key” should already be set to “selection” (if not, do that now).</span></li>
 	<li class="li3"><span class="s1">Next to “Model Key Path”, type “children” and hit enter so that “Bind” gets checked.</span></li>
 </ol>
 <p class="p3"><span class="s1"><i>What Have We Just Done?</i></span></p>
